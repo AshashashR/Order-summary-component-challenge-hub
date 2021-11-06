@@ -1,30 +1,26 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-
-
-
-body, html {
+body {
     font-family: 'Red Hat Display', sans-serif;
-    max-width: 100%;
-    min-height: 100%;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
+    background: url(images/pattern-background-desktop.svg) no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    max-width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .container {
+    position: absolute;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     text-align: center;
     background-color: white;
     border-radius: 20px;
-    max-width: 375px;
-    min-height: 500px;
+    min-width: 400px;
+    height: 600px;
+    box-shadow: 0px 8px 9px 4px rgba(73, 60, 124, 0.3);
+    margin-bottom: 30px;
 }
 
 #header img {
@@ -32,7 +28,7 @@ body, html {
     border-radius: 20px 20px 0 0;
     border: none;
     margin: 0;
-    width: 375px;
+    width: 400px;
 }
 
 #order-summary {
@@ -41,7 +37,6 @@ body, html {
 
 #order-summary h1 {
     padding-top: 220px;
-    padding-bottom: 20px;
     font-weight: bold;
     font-size: 25px;
     color: rgb(58, 58, 58);
@@ -53,47 +48,114 @@ body, html {
     color: grey;
 }
 
-#order-summary a button {
+#plan {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 340px;
+    height: 70px;
+    background-color: rgb(200, 211, 243, 0.2);
+    margin-top: 370px;
+    margin-bottom: 50px;
+}
+
+#plan img {
+    margin-left: 18px;
+}
+
+#plan h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+    margin: 10px;
+    margin-right: 22px;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#plan h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    margin-right: 170px;
+    margin-top: 30px;
+    margin-left: -170px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#change a {
+    position: absolute;
+    margin-top: 393px;
+    margin-right: 110px;
+    margin-left: -110px;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#payment {
+    position: absolute;
+    padding-top: 395px;
+    margin-top: 70px;
+}
+
+#payment a button {
     border-radius: 8px;
     border: none;
-    box-shadow: 0 20px #eceaea;
+    box-shadow: 0px 8px 9px 4px rgb(134, 118, 196, 0.3);
     font-size: 14px;
     font-weight: 700;
-    width: 300px;
+    width: 340px;
     height: 40px;
     color: white;
     background-color:hsl(245, 75%, 52%);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
+#payment a button:hover {
+    background-color: hsl(245, 71%, 26%);
+    transition: 0.5s;      
+    color: white;
+}
+#payment a:link { text-decoration: none; }
 
-#order-summary a p {
+#payment a:visited { text-decoration: none; }
+
+#payment a:hover { text-decoration: none; }
+
+#payment a:active { text-decoration: none; }
+
+#payment a p {
     font-size: 16px;
     font-weight: 700;
     color: grey;
     outline: none;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .attribution { 
+    position: absolute;
     font-size: 11px; 
     text-align: center; 
+    bottom: -60px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 746px) {
+    .attribution {
+        bottom: 0;
+    }
+    body {
+        margin-bottom: 0;
+    }
 }

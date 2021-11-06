@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+body, html {
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 100%;
+    min-height: 100%;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 375px;
+    min-height: 500px;
+}
+
+#header img {
+    position: relative;
+    border-radius: 20px 20px 0 0;
+    border: none;
+    margin: 0;
+    width: 375px;
+}
+
+#order-summary {
+    position: absolute;
+}
+
+#order-summary h1 {
+    padding-top: 220px;
+    padding-bottom: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(58, 58, 58);
+}
+
+#order-summary p {
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+}
+
+#order-summary a button {
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 20px #eceaea;
+    font-size: 14px;
+    font-weight: 700;
+    width: 300px;
+    height: 40px;
+    color: white;
+    background-color:hsl(245, 75%, 52%);
+    margin-bottom: 30px;
+}
+
+
+#order-summary a p {
+    font-size: 16px;
+    font-weight: 700;
+    color: grey;
+    outline: none;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

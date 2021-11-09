@@ -35,21 +35,26 @@ body {
     background-color: white;
     border-radius: 20px;
     width: 450px;
-    min-height: 570px;
+    min-height: 100%;
     box-shadow: 0px 8px 9px 4px rgba(73, 60, 124, 0.3);
     margin-bottom: 50px;
+    margin-top: 30px;
 }
 
 .card-illustration img {
     border-radius: 20px 20px 0 0;
+    margin-top: -48px;
 }
 
 
 .order {
-    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-bottom: 10px;
 }
-
+    
 .order h1 {
+    padding-top: 20px;
     font-weight: 900;
     font-size: 30px;
     color: var(--dark-blue);
@@ -66,11 +71,98 @@ body {
 .plan {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    font-size: 16px;
+    font-family: inherit;
+    line-height: 1.6;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: var(--very-pale-blue);
+    width: 375px;
+    height: 80px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.plan img {
+    margin-right: 15px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+}
+
+.plan h2 {
+    font-size: 16px;
+    color: var(--dark-blue);
+    line-height: 0;
+    padding-right: 60px;
+}
+
+.plan p {
+    padding-right: 65px;
+    font-size: 16px;
 }
 
 .plan a {
+    font-weight: 700;
+    color: var(--bright-blue);
+    margin-right: 40px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.plan a:hover {
+    transition: 0.2s; 
+    color: #7280a7;     
+    text-decoration: none;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.payment .btn-payment {
+    border-radius: 10px;
+    width: 375px;
+    height: 50px;
+    background-color: var(--bright-blue);
+    align-self: center;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: inherit;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    box-shadow: 0px 8px 9px 4px rgba(128, 113, 187, 0.3);
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+
+.payment .btn-payment:hover {
+    background-color: hsl(245, 71%, 26%);
+    transition: 0.3s;      
+    color: white;
+}
+
+.payment .btn-cancel {
+    color: var(--desaturated-blue);
+    font-size: 15px;
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.payment .btn-cancel:hover {    
+    color: rgba(0, 0, 0, 0.815);
+    transition: 0.3s; 
 }
 
 /* #header img {
@@ -181,18 +273,17 @@ body {
     outline: none;
     text-decoration: none;
     cursor: pointer;
-}
+}*/
 
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
-    bottom: -60px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
-}*/
+}
 
 @media (min-width: 746px) {
    .body {

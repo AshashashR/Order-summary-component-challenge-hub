@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](<img width="644" alt="Capture d’écran 2021-11-09 à 20 44 13" src="https://user-images.githubusercontent.com/78886716/140919672-aee152a6-4c1a-4e97-89e8-6f3b1abaafda.png">)
+![]()<img width="644" alt="Capture d’écran 2021-11-09 à 20 44 13" src="https://user-images.githubusercontent.com/78886716/140919672-aee152a6-4c1a-4e97-89e8-6f3b1abaafda.png">
 
 
 ### Links

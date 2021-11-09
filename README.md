@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](<img width="644" alt="Capture d’écran 2021-11-09 à 20 44 13" src="https://user-images.githubusercontent.com/78886716/140919672-aee152a6-4c1a-4e97-89e8-6f3b1abaafda.png">)
 
 
 ### Links
@@ -49,7 +49,6 @@ On my first attempt, I didn't use CSS Flexbox so the design was kind of weird. I
 
 With my second attempt, I used flexbox and applied the advices I've been given on Frontend Mentor. My code is cleaner and much simpler than the first attempt.
 
-
 ### Continued development
 
 I will need to keep practicing Flexbox, since I was not really used to it.
@@ -58,12 +57,10 @@ I will need to keep practicing Flexbox, since I was not really used to it.
 
 - [Example resource 1](https://vanzaordersummary.netlify.app/) - This helped me for giving me a concrete visual example fo the card.
 
-
 ## Author
 
 - Website - [GitHub](https://github.com/AshleyRakotoson)
 - Frontend Mentor - [@AshleyRakotoson](https://www.frontendmentor.io/profile/AshleyRakotoson)
-
 
 ## Acknowledgments
 

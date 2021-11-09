@@ -3,8 +3,13 @@ html {
     font-size: 100%;
 }
   
-*, *::before, *::after {
-    box-sizing: inherit
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* *::before, 
+*::after {
+    box-sizing: inherit; */
 }
 
 :root {
@@ -19,38 +24,43 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     background: url(images/pattern-background-desktop.svg) no-repeat;
     background-color: var(--pale-blue);
+    background-size: contain;
     color: #7280a7;
     font-family: "Red Hat Display", sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 40px;
+    min-height: 100vh;
 }
 
 .container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: white;
     border-radius: 20px;
-    width: 450px;
-    min-height: 100%;
+    max-width: 450px;
+    min-height: 540px;
     box-shadow: 0px 8px 9px 4px rgba(73, 60, 124, 0.3);
     margin-bottom: 50px;
-    margin-top: 30px;
 }
 
 .card-illustration img {
+    width: 100%;
     border-radius: 20px 20px 0 0;
-    margin-top: -48px;
+    padding-bottom: 20px;
 }
 
 
 .order {
     margin-left: 30px;
     margin-right: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
     
 .order h1 {
@@ -58,6 +68,7 @@ body {
     font-weight: 900;
     font-size: 30px;
     color: var(--dark-blue);
+    padding-bottom: 15px;
 }
 
 .order p {
@@ -80,7 +91,7 @@ body {
     box-sizing: border-box;
     border-radius: 10px;
     background-color: var(--very-pale-blue);
-    width: 375px;
+    width: 360px;
     height: 80px;
     padding-top: 30px;
     padding-bottom: 20px;
@@ -96,8 +107,8 @@ body {
 .plan h2 {
     font-size: 16px;
     color: var(--dark-blue);
-    line-height: 0;
     padding-right: 60px;
+    line-height: 1;
 }
 
 .plan p {
@@ -125,11 +136,12 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .payment .btn-payment {
     border-radius: 10px;
-    width: 375px;
+    width: 360px;
     height: 50px;
     background-color: var(--bright-blue);
     align-self: center;
@@ -165,128 +177,73 @@ body {
     transition: 0.3s; 
 }
 
-/* #header img {
-    border-radius: 20px 20px 0 0;
-    border: none;
-    margin: 0;
-    width: 400px;
-}
-
-
-#order-summary h1 {
-    padding-top: 220px;
-    font-weight: bold;
-    font-size: 25px;
-    color: rgb(58, 58, 58);
-}
-
-#order-summary p {
-    font-size: 15px;
-    font-weight: 400;
-    color: grey;
-}
-
-#plan {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 340px;
-    height: 70px;
-    background-color: rgb(200, 211, 243, 0.2);
-    margin-top: 370px;
-    margin-bottom: 50px;
-}
-
-#plan img {
-    margin-left: 18px;
-}
-
-#plan h2 {
-    font-size: 16px;
-    font-weight: 700;
-    color: rgb(58, 58, 58);
-    margin: 10px;
-    margin-right: 22px;
-    align-items: center;
-    margin-top: -10px;
-}
-
-#plan h3 {
-    font-size: 15px;
-    font-weight: 500;
-    color: grey;
-    margin-right: 170px;
-    margin-top: 30px;
-    margin-left: -170px;
-    margin-bottom: 10px;
-    align-items: center;
-}
-
-#change a {
-    margin-top: 393px;
-    margin-right: 110px;
-    margin-left: -110px;
-    color: hsl(245, 75%, 52%);
-    font-weight: 700;
-    cursor: pointer;
-}
-
-#payment {
-    position: absolute;
-    padding-top: 395px;
-    margin-top: 70px;
-}
-
-#payment a button {
-    border-radius: 8px;
-    border: none;
-    box-shadow: 0px 8px 9px 4px rgb(134, 118, 196, 0.3);
-    font-size: 14px;
-    font-weight: 700;
-    width: 340px;
-    height: 40px;
-    color: white;
-    background-color:hsl(245, 75%, 52%);
-    margin-bottom: 20px;
-    cursor: pointer;
-}
-
-#payment a button:hover {
-    background-color: hsl(245, 71%, 26%);
-    transition: 0.5s;      
-    color: white;
-}
-#payment a:link { text-decoration: none; }
-
-#payment a:visited { text-decoration: none; }
-
-#payment a:hover { text-decoration: none; }
-
-#payment a:active { text-decoration: none; }
-
-#payment a p {
-    font-size: 16px;
-    font-weight: 700;
-    color: grey;
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-}*/
-
-
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
 
-@media (min-width: 746px) {
+@media only screen and (max-width:425px) {
    .body {
-       background: url(images/pattern-background-desktop.svg) no-repeat center/cover;
-   }
-} 
+        background: url(images/pattern-background-desktop.svg) no-repeat center/cover;
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+
+    .container {
+        max-width: 85%;
+    }
+
+    .card-illustration img {
+        height: auto;
+    }
+
+    .container .order p {
+        font-size: 13px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .order h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .plan, 
+    .payment .btn-payment {
+        width: 250px;
+    }
+
+    .plan img {
+        margin-left: 15px;
+    }
+    
+    .plan h2 {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .plan p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .plan a {
+        font-size: 12px;
+        margin-right: 20px;
+        margin-left: -40px;
+    }
+
+    .payment .btn-cancel,
+    .payment .btn-payment {
+        font-size: 13px;
+    }
+
+    .payment .btn-payment {
+        height: 45px;
+    }
+}

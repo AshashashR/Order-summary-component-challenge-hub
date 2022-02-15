@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-order-summary-card-solution-using-css-flexbox-qApErb1sI)
-- Live Site URL: [GitHub](https://ashleyrakotoson.github.io/Order-summary-component-challenge-hub/)
+- Live Site URL: [GitHub](https://ashashashr.github.io/Order-summary-component-challenge-hub/)
 
 ## My process
 
